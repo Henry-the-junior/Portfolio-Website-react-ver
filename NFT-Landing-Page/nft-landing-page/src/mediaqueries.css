@@ -1,0 +1,120 @@
+@media screen and (max-width: 1700px) {
+  .section__pic-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  #profile {
+    height: 75vh;
+    margin-bottom: 8vh;
+  }
+  .arrow {
+    display: none;
+  }
+  section {
+    margin: 0 5%; /* 利用margin來調整section的寬度 */
+  }
+  .experience-containers {
+    flex-wrap: wrap;
+  }
+  .section-container {
+    margin-top: 1rem;
+  }
+  .experience-details-container {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #profile,
+  .section-container {
+    display: block; /* 讓內部各個元素改成由上至下排列 */
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .experience-containers {
+    margin-top: 0;
+  }
+  section {
+    height: fit-content;
+  }
+  .text-container {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    /* 給footer中的.nav-links li a做RWD用的 */
+    font-size: 1rem;
+  }
+  .nav-links {
+    /* 給footer中的.nav-links做RWD用的 */
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .about-containers {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .text-container {
+    margin-top: 2rem;
+  }
+  .experience-containers {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .experience-sub-title {
+    font-size: 1.3rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  .quote {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
